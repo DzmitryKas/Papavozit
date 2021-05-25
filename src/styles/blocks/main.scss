@@ -1,0 +1,135 @@
+.main {
+  &__inner {
+    margin: 12px 0 40px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: -12px;
+  }
+
+  &__card {
+    width: 33%;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    @include transition;
+    margin-top: 24px;
+
+    @include tablet-and-mobile {
+      width: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 20px rgba(65, 65, 65, 0.07);
+
+      .card {
+        &__img {
+          transform: scale(1.02);
+        }
+
+        &__title {
+          color: #FF3737;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    margin: -12px;
+    margin-top: 12px;
+  }
+}
+
+.card {
+  &--medium {
+    width: 25%;
+
+    @include tablet-and-mobile {
+      width: 50%;
+    }
+  }
+
+  &--low {
+    width: 20%;
+
+    @include tablet-and-mobile {
+      width: 50%;
+    }
+  }
+
+  &__img {
+    @include transition;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px 24px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    color: #202020;
+    @include transition;
+  }
+
+  &__subtitle {
+    line-height: 17px;
+    color: #202020;
+    margin-top: 6px;
+  }
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  width: 50%;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  @include transition;
+
+  &:hover {
+    box-shadow: 0px 0px 20px rgba(65, 65, 65, 0.07);
+
+    .cell {
+      &__title {
+        color: #FF3737;
+      }
+
+      &__img {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  &__img {
+    border-radius: 12px;
+    @include transition;
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    @include transition;
+  }
+
+  &__subtitle {
+    margin-top: 6px;
+    color: #202020;
+  }
+}

@@ -1,5 +1,389 @@
-.block {
-    width: 500px;
-    height: 500px;
-    background-image: url('../assets/img/header-image.jpg');
+.header {
+  z-index: 11;
+
+  @include tablet-and-mobile {
+    border-bottom: 1px solid #EEEEEE;
+    position: relative;
+    background: white;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menu-icon {
+    display: none;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+      opacity: .8;
+    }
+
+
+    @include tablet-and-mobile {
+      display: block;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__img {
+    @include tablet-and-mobile {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__subtitle {
+    width: 120px;
+
+    @include tablet-and-mobile {
+      display: none;
+    }
+  }
+
+  &__medium {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__time {
+    font-size: 13px;
+    font-weight: 400;
+
+    @include tablet-and-mobile {
+      font-size: 11px;
+    }
+
+    span {
+      @include tablet-and-mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__phone {
+    display: flex;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &__items {
+    display: flex;
+
+    @include tablet-and-mobile {
+      display: none;
+    }
+  }
+
+  &__cell {
+    margin-right: 6px;
+  }
+
+  &__text {
+    color: #8F8F8F;
+    font-size: 13px;
+    line-height: 16px;
+    @include transition;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    @include tablet-and-mobile {
+      display: none;
+    }
+  }
+
+  &__link-phone {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 24px;
+
+    @include tablet-and-mobile {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+
+    @include tablet-and-mobile {
+      display: none;
+    }
+  }
+
+  &__instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E1E1E3;
+    border-radius: 12px;
+    height: 44px;
+    width: 59px;
+    margin-right: 12px;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__socials-mobile {
+    display: none;
+
+    @include tablet-and-mobile {
+      display: block;
+    }
+  }
+
+  &__mobile-items {
+    display: flex;
+  }
+
+  &__mobile-cell {
+    &:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+}
+
+.basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 11px;
+  position: relative;
+  background: #F5F5F7;
+  border-radius: 6px;
+  color: #8F8F8F;
+  cursor: pointer;
+
+  &:hover {
+    .basket {
+      &__popup {
+        display: block;
+      }
+    }
+  }
+
+  &--active {
+    color: white;
+    background: #FF3737;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px 12px;
+    padding: 12px 0;
+    width: 310px;
+    background: #F5F5F7;
+    color: #FF3737;
+    border-radius: 6px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__popup {
+    display: none;
+    position: absolute;
+    top: -2px;
+    right: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    z-index: 10;
+  }
+
+  &__icon {
+    margin-right: 13px;
+  }
+
+  &__img {
+    width: 88px;
+    height: 73px;
+    margin-right: 12px;
+  }
+
+  &__cards {
+    padding: 18px;
+  }
+
+  &__card {
+    display: flex;
+    color: black;
+    position: relative;
+    padding-bottom: 20px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #E5E5E5;
+    }
+
+    &:not(:first-child) {
+      margin-top: 18px;
+    }
+  }
+
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 26px;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 22px;
+    color: #202020
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    line-height: 17px;
+    color: #8F8F8F;
+    text-align: left;
+  }
+
+  &__card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+    width: 100%;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0px;
+    right: 0;
+  }
+
+  &__bottom {
+    padding: 18px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__btns {
+    margin-top: 16px;
+  }
+
+  &__btn {
+    &:last-child {
+      margin-top: 7px;
+    }
+  }
+}
+
+.nav {
+  padding: 18px 0 16px;
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  margin-bottom: 18px;
+
+  .container {
+    box-sizing: content-box;
+  }
+
+  @include tablet-and-mobile {
+    padding-top: 60px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 70%;
+    margin: 0;
+    border: none;
+    background: white;
+    z-index: -1;
+    overflow: auto;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablet-and-mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    @include tablet-and-mobile {
+      &:not(:first-child) {
+      }
+    }
+
+    &.promotions {
+      order: -1;
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 16px;
+    color: #8F8F8F;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &.red {
+      color: #FF3737;
+      font-weight: 600;
+    }
+
+    @include tablet-and-mobile {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      margin-top: 30px;
+      color: #202020;
+    }
+  }
+
+  &__icon {
+    margin-right: 5px;
+  }
+
 }

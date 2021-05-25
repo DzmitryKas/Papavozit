@@ -4,10 +4,524 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Enriqueta:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="./assets/img/header-image.jpg" alt="">
-    <div class="block"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <img src="./assets/img/header/menu.svg" alt="" class="header__menu-icon">
+                <div class="header__left">
+                    <div class="header__logo">
+                        <img src="./assets/img/header/logo.svg" alt="logo" class="header__img">
+                    </div>
+                    <div class="header__subtitle">Доставка еды
+                        в городе <span>Витебск</span>
+                    </div>
+                </div>
+                <div class="header__medium">
+                    <div class="header__time"><span>Доставка с </span>08:00 до 24:00</div>
+                    <div class="header__phone">
+                        <ul class="header__items">
+                            <li class="header__cell">
+                                <a href="viber://add?number=7281313" class="header__link">
+                                    <img src="./assets/img/header/viber.svg" alt="viber" class="header__icon"/>
+                                </a>
+                            </li>
+                            <li class="header__cell">
+                                <a href="https://telegram.me/7281313" class="header__link">
+                                    <img src="./assets/img/header/telegram.svg" alt="telegram" class="header__icon"/>
+                                </a>
+                            </li>
+                            <li class="header__cell">
+                                <a href="https://wa.me/7281313" class="header__link">
+                                    <img src="./assets/img/header/whatsapp.svg" alt="whatsapp" class="header__icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="tel:+375297281313" class="header__link-phone">
+                            728-13-13
+                        </a>
+                    </div>
+                    <div class="header__text">Перезвоните мне</div>
+                </div>
+                <div class="header__right">
+                    <a href="www.instagram.com" class="header__instagram">
+                        <img src="./assets/img/header/insta.svg" alt="instagram" class="header__insta-icon">
+                    </a>
+                    <div class="header__basket basket">
+                        <img src="./assets/img/header/basket.svg" alt="basket" class="basket__icon">
+                        <span class="basket__text">
+                            Корзина: 29,88 руб.
+                        </span>
+                        <div class="basket__popup">
+                            <div class="basket__header">
+                                Свернуть корзину
+                            </div>
+                            <ul class="basket__cards">
+                                <li class="basket__card">
+                                    <img src="./assets/img/header/card-icon.jpg" alt="icon" class="basket__img">
+                                    <div class="basket__card-content">
+                                        <span class="basket__title">Феликс креветка</span>
+                                        <span class="basket__subtitle">295 г - нори, рис, сыр сливочный...</span>
+                                        <div class="basket__card-bottom">
+                                            <div class="basket__input-number input-number">
+                                                <div class="input-number__minus">-</div>
+                                                <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1">
+                                                <div class="input-number__plus">+</div>
+                                            </div>
+                                            <span class="basket__sum">14,99 р.</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/common/close.svg" alt="close" class="basket__close">
+                                </li>
+                                <li class="basket__card">
+                                    <img src="./assets/img/header/card-icon.jpg" alt="icon" class="basket__img">
+                                    <div class="basket__card-content">
+                                        <span class="basket__title">Феликс креветка</span>
+                                        <span class="basket__subtitle">295 г - нори, рис, сыр сливочный...</span>
+                                        <div class="basket__card-bottom">
+                                            <div class="basket__input-number input-number">
+                                                <div class="input-number__minus">-</div>
+                                                <input class="input-number__input" type="text" pattern="^[0-9]+$" value="1">
+                                                <div class="input-number__plus">+</div>
+                                            </div>
+                                            <span class="basket__sum">14,99 р.</span>
+                                        </div>
+                                    </div>
+                                    <img src="./assets/img/common/close.svg" alt="close" class="basket__close">
+                                </li>
+                            </ul>
+                            <div class="basket__bottom">
+                                <div class="basket__price">
+                                    <span class="basket__price-text">Сумма заказа:</span>
+                                    <span class="order__price">29,88 р.</span>
+                                </div>
+                                <div class="basket__btns">
+                                    <button class="basket__btn btn btn--100">Оформить заказ</button>
+                                    <button class="basket__btn btn btn--active btn--100">Очистить все</button>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__socials-mobile">
+                    <ul class="header__mobile-items">
+                        <li class="header__mobile-cell">
+                            <a href="viber://add?number=7281313" class="header__-mobile-link">
+                                <img src="./assets/img/header/viber-mobile.svg" alt="viber" class="header__mobile-icon"/>
+                            </a>
+                        </li>
+                        <li class="header__mobile-cell">
+                            <a href="https://telegram.me/7281313" class="header__mobile-link">
+                                <img src="./assets/img/header/telegram-mobile.svg" alt="telegram" class="header__mobile-icon"/>
+                            </a>
+                        </li>
+                        <li class="header__mobile-cell">
+                            <a href="https://wa.me/7281313" class="header__mobile-link">
+                                <img src="./assets/img/header/whatsapp-mobile.svg" alt="whatsapp" class="header__mobile-icon"/>
+                            </a>
+                        </li>
+                        <li class="header__mobile-cell">
+                            <a href="https://wa.me/7281313" class="header__mobile-link">
+                                <img src="./assets/img/header/insta-mobile.svg" alt="whatsapp" class="header__mobile-icon"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <nav class="header__nav nav">
+            <div class="container">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            <img src="./assets/img/header/sushi.svg" alt="icon" class="nav__icon">
+                            СЕТЫ
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Суши
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            РОЛЛЫ
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            САШИМИ
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            ПИЦЦА
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Комбо
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            ШАУРМА
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Фритюр
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Гриль
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Блины
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            СЭндвичи
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            НАПИТКИ
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            Десерты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            СОУСЫ
+                        </a>
+                    </li>
+                    <li class="nav__item promotions">
+                        <a href="#" class="nav__link red">
+                            АКЦИИ
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">
+                            ДоставкА
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="./assets/img/swiper/slide.png" alt="slide">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/img/swiper/slide.png" alt="slide">
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/img/swiper/slide.png" alt="slide">
+            </div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <main class="main">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__container">
+                    <div class="main__card card">
+                        <img src="./assets/img/main/Top.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Сеты</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card">
+                        <img src="./assets/img/main/Top.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Суши</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card">
+                        <img src="./assets/img/main/Top.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Ролы</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card card--medium">
+                        <img src="./assets/img/main/Middle.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Сеты</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card card--medium">
+                        <img src="./assets/img/main/Middle.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Суши</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card card--medium">
+                        <img src="./assets/img/main/Middle.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Ролы</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card card--medium">
+                        <img src="./assets/img/main/Middle.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Ролы</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card card--low">
+                        <img src="./assets/img/main/Low.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Сеты</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card card--low">
+                        <img src="./assets/img/main/Low.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Сеты</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card card--low">
+                        <img src="./assets/img/main/Low.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Сеты</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card card--low">
+                        <img src="./assets/img/main/Low.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Сеты</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__card card card--low">
+                        <img src="./assets/img/main/Low.png" alt="picture" class="card__img">
+                        <div class="card__desc">
+                            <span class="card__title">Сеты</span>
+                            <span class="card__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__bottom">
+                    <div class="main__cell cell">
+                        <img src="./assets/img/main/cell.png" alt="picture" class="cell__img">
+                        <div class="cell__desc">
+                            <span class="cell__title">Напитки</span>
+                            <span class="cell__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                    <div class="main__cell cell">
+                        <img src="./assets/img/main/cell.png" alt="picture" class="cell__img">
+                        <div class="cell__desc">
+                            <span class="cell__title">Напитки</span>
+                            <span class="cell__subtitle">Футомаки, Хосомаки, и другие...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__menu">
+                    <div class="footer__title">Меню</div>
+                    <div class="footer__columns">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Сеты
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Суши
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Ролы
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Пицца
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Комбо
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Шаурма
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Фритюр
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Блины
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Гриль
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Сэндвичи
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Напитки
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">
+                                    Соусы
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__information">
+                    <div class="footer__title">Информация</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Зона доставки
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__set">
+                    <div class="footer__title">Информация</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                «Папа жарит»
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">
+                                «Суши папа»
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="./assets/img/footer/logo.svg" alt="logo" class="footer__img"/>
+                <div class="footer__contacts">
+                    <span class="footer__time">Доставка с 08:00 до 24:00</span>
+                    <div class="footer__phone">
+                        <ul class="footer__items">
+                            <li class="footer__cell">
+                                <a href="viber://add?number=7281313" class="footer__link">
+                                    <img src="./assets/img/footer/viber.svg" alt="viber" class="footer__icon"/>
+                                </a>
+                            </li>
+                            <li class="footer__cell">
+                                <a href="https://telegram.me/7281313" class="footer__link">
+                                    <img src="./assets/img/footer/telegram.svg" alt="telegram" class="footer__icon"/>
+                                </a>
+                            </li>
+                            <li class="footer__cell">
+                                <a href="https://wa.me/7281313" class="footer__link">
+                                    <img src="./assets/img/footer/whatsapp.svg" alt="whatsapp" class="footer__icon"/>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="tel:+375297281313" class="footer__link-phone">
+                            728-13-13
+                        </a>
+                    </div>
+                    <a href="mailto:Info@sushipapa.by" class="footer__mail">
+                        Info@sushipapa.by
+                    </a>
+                    <button class="footer__btn btn btn--radius">Заказать звонок</button>
+                    <ul class="footer__socials">
+                        <li class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/img/footer/viber.svg" alt="icon" class="footer__pic"/>
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/img/footer/telegram.svg" alt="icon" class="footer__pic"/>
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/img/footer/insta.svg" alt="icon" class="footer__pic"/>
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/img/footer/whatsapp.svg" alt="icon" class="footer__pic"/>
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a href="#" class="footer__social-link">
+                                <img src="./assets/img/footer/vk.svg" alt="icon" class="footer__pic"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

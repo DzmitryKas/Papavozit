@@ -1,0 +1,128 @@
+.footer {
+  background: #3B3E43;
+  padding-bottom: 60px;
+  color: white;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0 34px;
+    border-bottom: 1px solid rgba(245, 245, 247, .2);
+  }
+
+  &__columns {
+    display: flex;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 11px;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #F5F5F7;
+    @include transition;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__list {
+    &:not(:last-child) {
+      margin-right: 32px;
+    }
+  }
+
+  &__time {
+    font-size: 13px;
+    line-height: 16px;
+    color: white;
+  }
+
+  &__phone {
+    display: flex;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 4px;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__cell {
+    margin-right: 6px;
+  }
+
+  &__text {
+    color: #8F8F8F;
+    font-size: 13px;
+    line-height: 16px;
+    @include transition;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__link-phone {
+    text-decoration: none;
+    color: white;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__mail {
+    margin-top: 4px;
+    color: #FF3737;
+    @include transition;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__btn {
+    margin-top: 17px;
+  }
+
+  &__socials {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+
+  &__social-link {
+    @include transition;
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__pic {
+    width: 20px;
+    height: 20px;
+  }
+}

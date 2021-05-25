@@ -57,12 +57,6 @@
   }
 }
 
-@mixin png-icon($name, $width, $height) {
-  background: url($images_dir+$name+".png") no-repeat;
-  width: $width + px;
-  height: $height + px;
-}
-
 @mixin ie10plus() {
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     @content;

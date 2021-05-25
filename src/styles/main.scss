@@ -6,5 +6,11 @@
 @import './helpers/mixins';
 @import './helpers/grid';
 @import './helpers/typography';
+@import './helpers/components';
+
 @import './blocks/header';
+@import "./blocks/footer";
+@import "./blocks/main";
+@import './blocks/swiper';
+
 
